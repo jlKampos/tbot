@@ -26,7 +26,35 @@ In time more commands will be added like weather lookups etc...
 }
 ```
 
-**NOTE:** this bot uses an SQLITE database to store users, so far users can execute commands:
+**NOTE:** this bot uses an SQLITE database to store users:
+sqlite database name and path :P
+
+```csharp
+	int amountUsers;
+		DataTable dt;
+		string myDBName = "TBot.db";
+		string myExecPath = System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
+		string myDB;
+
+		public TBotDataBase()
+		{
+			try
+			{
+				amountUsers = 0;
+				dt = new DataTable();
+				myDB = Path.Combine(myExecPath, this.GetType().Name, myDBName);
+
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+```
+
+**Users Commands:**
+
+```
 !help
 !google searchTerm
     eg: !google sausages
@@ -40,7 +68,7 @@ In time more commands will be added like weather lookups etc...
 !chatbot
     This will enable the chatBotAPI that will pull conversations from Pandorabots ALICE bot
     thet botname is replaced within the code to the bot.username
-    
+```
 
  **Since this is a self contained dotnet app, you can run it on mac ubuntu and windows, just publish the project
  to run execute:**
