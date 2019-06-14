@@ -1,5 +1,5 @@
 # tbot
-DOTNET Self contained Telegram BOT API Implementation 
+## DOTNET Self contained Telegram BOT API Implementation 
 
 This is a personal project that implementes Public APIS, TelegramBot, GoogleAPI & PandoraBots.
 NOTE: Pandorabots is called trough an API that is hosted at https://github.com/pierredavidbelanger/chatter-bot-api
@@ -9,11 +9,10 @@ All features were made for fun.
 In time more commands will be added like weather lookups etc...
 
 ############################################################################################
-USAGE:
+#### **USAGE:**
 
-Edit TBotConf.json file 
-Config:
-
+**Edit:** TBotConf.json located at the TBot/ Project 
+```json
 {
 	"Master": "YOURTELEGRAM_USERNAME",
 	"ChatGroupID": "-99999999", //the chatroom id, note you need to create a chatgroup and add the bot to the group
@@ -25,6 +24,7 @@ Config:
 		"CX": "04*************21:bab" // your goole CX KEY
 	}
 }
+```
 
 NOTE: this bot uses an SQLITE database to store users, so far users can execute commands:
 !help
