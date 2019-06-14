@@ -1,9 +1,12 @@
 # tbot
 ## DOTNET Self contained Telegram BOT API Implementation 
 
-This is a personal project that implementes Public APIS, TelegramBot, GoogleAPI & PandoraBots.
-NOTE: Pandorabots is called trough an API that is hosted at https://github.com/pierredavidbelanger/chatter-bot-api
-there is a DLL provided in this repo located at \tbot\ChatterBotAPI\ChatterBotAPI.dll , you can always remove this dll, and add your own pre compiled dll.
+This is a personal project of systems integration that implementes Public APIS, TelegramBot, GoogleAPI & PandoraBots...
+
+
+**NOTE:** Pandorabots is called trough an API that is hosted at https://github.com/pierredavidbelanger/chatter-bot-api
+there is a DLL provided in this repo located at:
+\tbot\ChatterBotAPI\ChatterBotAPI.dll , you can always remove this dll, and add your own pre compiled dll.
 
 All features were made for fun.
 In time more commands will be added like weather lookups etc...
