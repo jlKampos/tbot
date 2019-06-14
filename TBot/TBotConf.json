@@ -1,0 +1,11 @@
+{
+	"Master": "YOURTELEGRAM_USERNAME",
+	"ChatGroupID": "-99999999", //the chatroom id, note you need to create a chatgroup and add the bot to the group
+	"TelegramBotAPI": {
+		"KEY": "0********1:BE**************************dhYf" // your telegramBot api key
+	},
+	"GoogleAPI": {
+		"KEY": "BJ*************************XvN", // your google API KEY
+		"CX": "04*************21:bab" // your goole CX KEY
+	}
+}
