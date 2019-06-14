@@ -12,7 +12,7 @@ In time more commands will be added like weather lookups etc...
 #### **USAGE:**
 
 **Edit:** TBotConf.json located at the TBot/ Project 
-```json
+```
 {
 	"Master": "YOURTELEGRAM_USERNAME",
 	"ChatGroupID": "-99999999", //the chatroom id, note you need to create a chatgroup and add the bot to the group
@@ -26,7 +26,7 @@ In time more commands will be added like weather lookups etc...
 }
 ```
 
-NOTE: this bot uses an SQLITE database to store users, so far users can execute commands:
+**NOTE:** this bot uses an SQLITE database to store users, so far users can execute commands:
 !help
 !google searchTerm
     eg: !google sausages
@@ -37,9 +37,13 @@ NOTE: this bot uses an SQLITE database to store users, so far users can execute 
     eg: !sqlremoveuser root, !sqlremoveuser 2
  !sqlupdateuser USERNAME|USERID true|false(isadmin)
     eg: the same as the others 
+!chatbot
+    This will enable the chatBotAPI that will pull conversations from Pandorabots ALICE bot
+    thet botname is replaced within the code to the bot.username
     
- Since this is a self contained dotnet app, you can run it on mac ubuntu and windows, just publish the project
- to run execute:
+
+ **Since this is a self contained dotnet app, you can run it on mac ubuntu and windows, just publish the project
+ to run execute:**
  
  dotnet run TBot.dll
  
